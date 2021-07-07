@@ -1,0 +1,5 @@
+FROM openjdk:8
+MAINTAINER Mahesh
+ADD tartget/*.jar test.jar
+ENTRYPOINT ["java", "-jar", "/test.jar"]
+EXPOSE 8082
